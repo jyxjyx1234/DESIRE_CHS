@@ -10,7 +10,6 @@
 
 查看本人制作的其他机翻补丁：[https://github.com/jyxjyx1234?tab=repositories](https://github.com/jyxjyx1234?tab=repositories)
 
-
 ### **使用说明**
 
 将补丁文件夹中的所有文件复制到游戏目录即可。（本人技术不行，所以有一大堆小文件）
@@ -42,3 +41,12 @@
 | JANコード： | 4580264785081                                                                                                                                        |
 
 游戏信息\本体购买：[https://www.getchu.com/soft.phtml?id=970517](https://www.getchu.com/soft.phtml?id=970517)
+
+### 致谢
+
+本补丁使用了以下开源项目：
+
+* [BGIKit](https://github.com/xupefei/BGIKit)  : 对BGI引擎的脚本进行编、解码
+* [Sakura-13B-Galgame](https://github.com/SakuraLLM/Sakura-13B-Galgame) : 适配轻小说/Galgame的日中翻译大模型
+* [UniversalInjectorFramework](https://github.com/AtomCrafty/UniversalInjectorFramework)：对汉化后的文本进行修正以正常显示
+* [GalTransl](https://github.com/xd2333/GalTransl) ：自动化翻译工具
