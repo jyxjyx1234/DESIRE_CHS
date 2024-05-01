@@ -70,3 +70,4 @@ os.system('xcopy>nul 2>nul /s /y image 一定要先看README!!!!!!!!!!!\\image\\
 os.system('Rar>nul 2>nul a -m0 -r DESIRE_chs.rar 一定要先看README!!!!!!!!!!!\\')
 
 os.system('Rar>nul 2>nul a -m0 -r DESIRE_chs.rar image\\')
+os.system('Rar>nul 2>nul a -m0 DESIRE_chs.rar LE.rar')
