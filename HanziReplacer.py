@@ -32,7 +32,6 @@ charlist='這説為凜們時過対麼瑤還現髪種樣見経頭書実開両動�
 #生成hanzidic
 
 def GetInvalidChars(text,tempdict,charlist):#返回输入文本中不受支持的单字
-    InvalidChars=[]
     for char in text:
         try:
             char.encode(encoding='sjis')
