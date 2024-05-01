@@ -3,7 +3,7 @@
         "enable": true,
         "print_loaded_modules": false
     },
-    "allocate_console": true,
+    "allocate_console": false,
     "start_suspended": {
         "enable": false,
         "wait_for_input": true,
