@@ -75,8 +75,8 @@ def hanzitihuan(text,hanzidict):#主函数，实行对汉字的替换
 def ChangeUFIConfig(UFIConfigpath,source_chars,target_chars):
     with open(UFIConfigpath,'r',encoding='utf8',errors='ignore') as f:
         f=json.load(f)
-        f["text_processor"]["rules"][0]["source_chars"]=source_chars
-        f["text_processor"]["rules"][0]["target_chars"]=target_chars
+        f["character_substitution"]["source_chars"]=source_chars
+        f["character_substitution"]["target_chars"]=target_chars
 
     with open(UFIConfigpath,'w',encoding='utf8') as fout:
         json.dump(f,fout,ensure_ascii=False,indent=4)

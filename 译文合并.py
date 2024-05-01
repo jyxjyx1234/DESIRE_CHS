@@ -52,7 +52,21 @@ for filename in ori_filenames:
 ChangeUFIConfig(".\\DESIRE_CHS\\uif_config.json",source_chars,target_chars)
 
 trans_filenames=listdir('译文合并\\','txt')
+
 for filename in trans_filenames:
     os.system('ScriptEncoder.exe 译文合并\\'+filename)
-    os.system('move 译文合并\\'+filename+'.new '+'DESIRE_CHS\\')
+    os.system('move>nul 2>nul 译文合并\\'+filename+'.new '+'DESIRE_CHS\\')
+    os.system('del DESIRE_CHS\\'+filename.replace('.txt',''))
     os.system('ren DESIRE_CHS\\'+filename+'.new '+filename.replace('.txt',''))
+
+os.system('del DESIRE_CHS.rar')
+
+os.system('Rar>nul 2>nul a -m0 -r DESIRE_chs.rar DESIRE_CHS\\')
+os.system('Rar>nul 2>nul a -m0 DESIRE_chs.rar README.md')
+
+os.system('copy>nul 2>nul README.md 一定要先看README!!!!!!!!!!!\\')
+os.system('xcopy>nul 2>nul /s /y image 一定要先看README!!!!!!!!!!!\\image\\ ')
+
+os.system('Rar>nul 2>nul a -m0 -r DESIRE_chs.rar 一定要先看README!!!!!!!!!!!\\')
+
+os.system('Rar>nul 2>nul a -m0 -r DESIRE_chs.rar image\\')
