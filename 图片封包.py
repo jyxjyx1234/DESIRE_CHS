@@ -3,13 +3,16 @@
 import os
 from 译文合并 import listdir
 
-bmp_list=listdir('sysgrp_bmp','bmp')
+bmp_path='sysgrp_bmpout\\'
+out_path='sysgrp_out\\'
+
+bmp_list=listdir(bmp_path,'bmp')
 
 for i in bmp_list:
-    os.system('SysgrpConverter.exe sysgrp_bmp\\'+i)
+    os.system('SysgrpConverter.exe '+ bmp_path + i)
 
-out_list=listdir('sysgrp_bmp','out')
-os.system('del /Q sysgrp_out\\*.*')
+out_list=listdir(bmp_path,'out')
+os.system('del /Q '+out_path+'\\*.*')
+os.system('move '+bmp_path+'*.out'+' sysgrp_out\\')
 for i in out_list:
-    os.system('move sysgrp_bmp\\'+i+' sysgrp_out\\')
-    os.system('ren sysgrp_out\\'+i+' '+i.replace('.bmp.out',''))
+    os.system('ren '+out_path+i+' '+i.replace('.bmp.out',''))
