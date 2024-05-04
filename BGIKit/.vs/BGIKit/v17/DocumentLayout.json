@@ -1,12 +1,37 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\DESIRE_CHS\\BGIKit\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2170087-67D6-42E6-A0E0-BFAC11A8F500}|SysgrpConverter\\SysgrpConverter.csproj|d:\\desire_chs\\bgikit\\sysgrpconverter\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2170087-67D6-42E6-A0E0-BFAC11A8F500}|SysgrpConverter\\SysgrpConverter.csproj|solutionrelative:sysgrpconverter\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\DESIRE_CHS\\BGIKit\\SysgrpConverter\\Program.cs",
+              "RelativeDocumentMoniker": "SysgrpConverter\\Program.cs",
+              "ToolTip": "D:\\DESIRE_CHS\\BGIKit\\SysgrpConverter\\Program.cs*",
+              "RelativeToolTip": "SysgrpConverter\\Program.cs*",
+              "ViewState": "AQIAACEAAAAAAAAAAAAYwD4AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T22:11:29.843Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

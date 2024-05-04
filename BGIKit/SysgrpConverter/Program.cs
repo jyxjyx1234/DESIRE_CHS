@@ -37,7 +37,7 @@ namespace SysgrpConverter
                 width = br.ReadInt32();
                 height = br.ReadInt32();
                 br.BaseStream.Position = 0x1C;
-                depth = br.ReadInt16();
+                depth = br.ReadInt32();
 
                 br.BaseStream.Position = 0x36;
                 //bits = br.ReadBytes((int)br.BaseStream.Length - 0x36);
@@ -68,9 +68,9 @@ namespace SysgrpConverter
 
             using (var br = new BinaryReader(new FileStream(strFilename, FileMode.Open)))
             {
-                width = br.ReadInt16();
-                height = br.ReadInt16();
-                depth = br.ReadInt16();
+                width = br.ReadInt32();
+                height = br.ReadInt32();
+                depth = br.ReadInt32();
 
                 br.BaseStream.Position = 0x10;
                 bits = br.ReadBytes((int) br.BaseStream.Length - 0x10);
