@@ -23,6 +23,13 @@ def touming(x1,y1,x2,y2,img : Image):
         for j in range(y1, y2):
             img.putpixel((i,j), (0, 0, 0, 0))
     return img
+
+def ls_touming(x1,y1,x2,y2,img : Image):
+    for i in range(x1, x2):
+        for j in range(y1,y2):
+            img.putpixel((i-j+y1,j), (0, 0, 0, 0))
+    return img
+
     
 def replace_rect(src_path, replacement_path, output_path,text):
     # 打开源文件和替换文件
@@ -42,13 +49,18 @@ def replace_rect(src_path, replacement_path, output_path,text):
         draw.text((77, 8), text , font=font, fill=(254,254,254))
     src_img=src_img.convert('RGBA')
     src_img=touming(321,0,352,64,src_img)
-    src_img=touming(0,0,704,3,src_img)
-    src_img=touming(0,61,704,64,src_img)
-    src_img=touming(691,0,704,64,src_img)
-    src_img=touming(77,58,326,64,src_img)
-    src_img=touming(445,58,704,64,src_img)
-    src_img=touming(444,59,446,64,src_img)
-    src_img=touming(443,58,446,64,src_img)
+    src_img=touming(0,0,704,4,src_img)
+    src_img=touming(0,60,704,64,src_img)
+    src_img=touming(688,0,704,64,src_img)
+    src_img=touming(75,55,327,64,src_img)
+    src_img=ls_touming(75,55,81,64,src_img)
+    
+    src_img=touming(445,57,704,64,src_img)
+
+    
+    src_img=touming(442,55,704,64,src_img)
+    src_img=ls_touming(442,55,448,64,src_img)
+
     src_img=src_img.transpose(Image.Transpose.FLIP_TOP_BOTTOM)
     src_img.save(output_path,format='bmp')
 

@@ -6,7 +6,7 @@ for /R sysgrp_bmpout %%F in (*.bmp) do (
     SysgrpConverter.exe "%%F"
 )
 
-del /Q sysgrp_out\*.*
+del /Q sysgrp_out\*
 
 move sysgrp_bmpout\*.out sysgrp_out\
 
