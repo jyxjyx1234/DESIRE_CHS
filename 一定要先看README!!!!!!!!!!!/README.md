@@ -12,7 +12,7 @@
 
 ### **使用说明**
 
-将补丁文件夹中的所有文件复制到游戏目录即可。（本人技术不行，所以有一大堆小文件）
+将 `sysgrp_out`、`DESIRE_CHS`中的所有文件复制到游戏目录即可。`sysgrp_out`中为选项的翻译，`DESIRE_CHS`中为文本的翻译。（本人技术不行，所以有一大堆小文件）
 
 本游戏需要使用[Locale-Emulator](https://github.com/xupefei/Locale-Emulator)转区运行！！！
 
@@ -26,7 +26,9 @@
 
 ### 重新打包
 
-如需自行修改译文，请下载本仓库中的内容，在 `译文.json`中的 `"post_zh_preview"`中修改译文。运行译文合并.py即可重新打包，在DESIRE_CHS中可以找到新的文件，替换原本的汉化补丁文件即可。
+如需自行修改译文，请下载本仓库中的内容，在 `译文.json`中的 `"post_zh_preview"`中修改译文。运行`译文合并.py`即可重新打包，在DESIRE_CHS中可以找到新的文件，替换原本的汉化补丁文件即可。
+
+如需修改选项的翻译，可在 `sysgrp_bmp1-3`中找到对应的文件名，然后在 `图像处理\transtext.json`中对对应翻译进行修改，运行 `bmp_process.bat`即可在 `sysgrp_out`中找到修改后的文件。需要python环境以及 `PIL`库。
 
 ### 游戏信息
 
