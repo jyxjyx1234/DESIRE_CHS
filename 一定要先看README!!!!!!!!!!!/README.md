@@ -2,7 +2,7 @@
 
 本补丁是[DESIRE remaster A ver.](https://el-dia.net/desire/desire-a/desire-a.html)的AI机翻汉化补丁，使用[Sakura](https://github.com/SakuraLLM/Sakura-13B-Galgame) v0.10进行翻译。
 
-未进行校对。
+进行了简单的校对，修改了一些明显的错误。但是由于精力和水平有限，仍然有很多小错误，但应该不影响理解。
 
 本补丁仅供交流学习AI翻译使用，请在购买[游戏本体](https://el-dia.net/desire/desire-a/desire-a.html)的基础上使用本补丁。
 
@@ -26,7 +26,7 @@
 
 ### 重新打包
 
-如需自行修改译文，请下载本仓库中的内容，在 `译文.json`中的 `"post_zh_preview"`中修改译文。运行`译文合并.py`即可重新打包，在DESIRE_CHS中可以找到新的文件，替换原本的汉化补丁文件即可。
+如需自行修改译文，请下载本仓库中的内容，在 `译文.json`中的 `"post_zh_preview"`中修改译文。运行 `译文合并.py`即可重新打包，在DESIRE_CHS中可以找到新的文件，替换原本的汉化补丁文件即可。
 
 如需修改选项的翻译，可在 `sysgrp_bmp1-3`中找到对应的文件名，然后在 `图像处理\transtext.json`中对对应翻译进行修改，运行 `bmp_process.bat`即可在 `sysgrp_out`中找到修改后的文件。需要python环境以及 `PIL`库。
 
